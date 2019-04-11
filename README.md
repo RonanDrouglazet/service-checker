@@ -32,3 +32,17 @@ a config file is required at the root of the project service-checker/config.json
 }
 
 ```
+
+currently only http-get check is available, but others will come (like exec a bash command)
+
+## http-get check
+this check allow you to perform a GET request on a specific url and expect a status code (200 by default)
+
+## alerts (optional)
+currently only webhooks alert are supported, others will come (ex: email)
+
+## command (optional)
+execute a bash command if the check fails 
+
+## note
+`alert` and `command` are optional but you need to put at least one of them
