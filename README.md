@@ -1,5 +1,6 @@
 # service-checker
 A little service to perform some checks on a service, trigger an alert if needed, and exec a command if wanted
+No dependencies at all, only pure nodejs
 
 ## required
 - nodejs >= 8
@@ -33,7 +34,11 @@ a config file is required at the root of the project service-checker/config.json
 
 ```
 
-currently only http-get check is available, but others will come (like exec a bash command)
+currently only http-get check is available, but others will come (like http-post, exec a bash command)
+
+## start 
+`npm start` 
+or pm2 to run as a deamon `pm2 start ./src/service-checker.js`
 
 ## http-get check
 this check allow you to perform a GET request on a specific url and expect a status code (200 by default)
