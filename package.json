@@ -1,0 +1,19 @@
+{
+  "name": "service-checker",
+  "version": "1.0.0",
+  "description": "A little service to perform some checks on a service, trigger an alert if needed, and exec a command if wanted",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/service-checker.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RonanDrouglazet/service-checker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RonanDrouglazet/service-checker/issues"
+  },
+  "homepage": "https://github.com/RonanDrouglazet/service-checker#readme"
+}
