@@ -74,7 +74,7 @@ async function performAlerts(check, error) {
 }
 
 async function performCommand(check) {
-    return await execAsync(check.command)
+    return check.command ? await execAsync(check.command) : true
 }
 
 async function performFailureActions(check, error) {
