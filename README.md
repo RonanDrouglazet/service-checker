@@ -17,7 +17,7 @@ a config file is required at the root of the project service-checker/config.json
             "value": "https://myservice.com", //required
             "interval": "60000", //required
             "alerts": { //optional
-                "webhook": "https://hooks.slack.com/services/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"
+                "webhook": "YOUR_WEBHOOK_URL"
             },
             "command": "service my-service restart" //optional
         },
@@ -27,7 +27,7 @@ a config file is required at the root of the project service-checker/config.json
             "expected": 301, //optional status code expected (default 200)
             "interval": "60000",
             "alerts": {
-                "webhook": "https://hooks.slack.com/services/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"
+                "webhook": "YOUR_WEBHOOK_URL"
             }
         }
     ]
